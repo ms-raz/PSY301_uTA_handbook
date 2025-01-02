@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Benchmark Queries | PSY301 uTA Handbook</title>
+  <meta name="description" content="Benchmark Queries | PSY301 uTA Handbook" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Benchmark Queries | PSY301 uTA Handbook" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Benchmark Queries | PSY301 uTA Handbook" />
+  
+  
+  
+
+<meta name="author" content="Dr-RAZ: Rebecca A. Zarate" />
+
+
+<meta name="date" content="2025-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="benchmark-writing.html"/>
+<link rel="next" href="emails.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome!</a></li>
+<li class="chapter" data-level="" data-path="onboarding.html"><a href="onboarding.html"><i class="fa fa-check"></i>Onboarding</a>
+<ul>
+<li class="chapter" data-level="" data-path="onboarding.html"><a href="onboarding.html#access"><i class="fa fa-check"></i>Access</a></li>
+<li class="chapter" data-level="" data-path="onboarding.html"><a href="onboarding.html#scheduling-and-locations"><i class="fa fa-check"></i>Scheduling and Locations</a></li>
+<li class="chapter" data-level="" data-path="onboarding.html"><a href="onboarding.html#administrative-setup"><i class="fa fa-check"></i>Administrative Setup</a></li>
+<li class="chapter" data-level="" data-path="onboarding.html"><a href="onboarding.html#semester-meet-ups"><i class="fa fa-check"></i>Semester Meet Ups</a></li>
+<li class="chapter" data-level="" data-path="onboarding.html"><a href="onboarding.html#office-hours-and-ta-area"><i class="fa fa-check"></i>Office Hours and TA Area</a></li>
+<li class="chapter" data-level="" data-path="onboarding.html"><a href="onboarding.html#some-people-and-their-roles"><i class="fa fa-check"></i>Some People and Their Roles</a>
+<ul>
+<li class="chapter" data-level="" data-path="onboarding.html"><a href="onboarding.html#course-coordinator"><i class="fa fa-check"></i>Course Coordinator</a></li>
+<li class="chapter" data-level="" data-path="onboarding.html"><a href="onboarding.html#lead-ta-responsibilities"><i class="fa fa-check"></i>Lead TA Responsibilities</a></li>
+<li class="chapter" data-level="" data-path="onboarding.html"><a href="onboarding.html#course-jobs"><i class="fa fa-check"></i>Course Jobs</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html"><i class="fa fa-check"></i>Benchmark Writing</a>
+<ul>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#an-introduction-to-benchmarks"><i class="fa fa-check"></i>An Introduction to Benchmarks</a>
+<ul>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#example-question-set-with-mirrors"><i class="fa fa-check"></i>Example Question Set with Mirrors</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#the-writing-process"><i class="fa fa-check"></i>The Writing Process</a></li>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#content-guidelines"><i class="fa fa-check"></i>Content Guidelines</a></li>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#distractors"><i class="fa fa-check"></i>Distractors</a></li>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#mirrors-how-and-why"><i class="fa fa-check"></i>Mirrors: How and Why</a>
+<ul>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#key-guidelines-for-writing-mirrors"><i class="fa fa-check"></i>Key Guidelines for Writing Mirrors</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#benchmark-spreadsheet-for-each-lecture"><i class="fa fa-check"></i>Benchmark Spreadsheet for Each Lecture</a></li>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#spelling-and-formatting-formalities"><i class="fa fa-check"></i>Spelling and Formatting Formalities</a></li>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#recycling-benchmark-questions"><i class="fa fa-check"></i>Recycling Benchmark Questions</a></li>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#guidelines-for-recycling-questions"><i class="fa fa-check"></i>Guidelines for Recycling Questions</a></li>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#editing-and-revising-questions"><i class="fa fa-check"></i>Editing and Revising Questions</a>
+<ul>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#editing-process"><i class="fa fa-check"></i>Editing Process</a>
+<ul>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#writing-benchmarks"><i class="fa fa-check"></i>Writing Benchmarks</a></li>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#editing-benchmarks"><i class="fa fa-check"></i>Editing Benchmarks</a></li>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#benchmark-writer-revisions"><i class="fa fa-check"></i>Benchmark Writer Revisions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="benchmark-writing.html"><a href="benchmark-writing.html#benchmark-schedule"><i class="fa fa-check"></i>Benchmark Schedule</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="benchmark-queries.html"><a href="benchmark-queries.html"><i class="fa fa-check"></i>Benchmark Queries</a>
+<ul>
+<li class="chapter" data-level="" data-path="benchmark-queries.html"><a href="benchmark-queries.html#benchmark-query-process"><i class="fa fa-check"></i>Benchmark Query Process</a>
+<ul>
+<li class="chapter" data-level="" data-path="benchmark-queries.html"><a href="benchmark-queries.html#student-guidelines"><i class="fa fa-check"></i>Student Guidelines</a></li>
+<li class="chapter" data-level="" data-path="benchmark-queries.html"><a href="benchmark-queries.html#query-handling-timeline"><i class="fa fa-check"></i>Query Handling Timeline</a></li>
+<li class="chapter" data-level="" data-path="benchmark-queries.html"><a href="benchmark-queries.html#sample-query-responses"><i class="fa fa-check"></i>Sample Query Responses</a>
+<ul>
+<li class="chapter" data-level="" data-path="benchmark-queries.html"><a href="benchmark-queries.html#general-query-response"><i class="fa fa-check"></i>General Query Response</a></li>
+<li class="chapter" data-level="" data-path="benchmark-queries.html"><a href="benchmark-queries.html#query-submitted-same-day-or-after-1-week"><i class="fa fa-check"></i>Query Submitted Same Day or After 1 Week</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="emails.html"><a href="emails.html"><i class="fa fa-check"></i>Emails</a>
+<ul>
+<li class="chapter" data-level="" data-path="emails.html"><a href="emails.html#managing-the-class-email-account"><i class="fa fa-check"></i>Managing the Class Email Account</a>
+<ul>
+<li class="chapter" data-level="" data-path="emails.html"><a href="emails.html#responsibilities"><i class="fa fa-check"></i>Responsibilities</a>
+<ul>
+<li class="chapter" data-level="" data-path="emails.html"><a href="emails.html#general-guidelines-for-responding-to-emails"><i class="fa fa-check"></i>General Guidelines for Responding to Emails</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="emails.html"><a href="emails.html#common-student-email-responses"><i class="fa fa-check"></i>Common Student Email Responses</a>
+<ul>
+<li class="chapter" data-level="" data-path="emails.html"><a href="emails.html#general-questions-that-can-be-answered-via-syllabus-or-faq-page"><i class="fa fa-check"></i>General Questions that Can be Answered Via Syllabus or FAQ Page</a></li>
+<li class="chapter" data-level="" data-path="emails.html"><a href="emails.html#didnt-receive-credit-for-ras-for-incorrect-answer"><i class="fa fa-check"></i>Didn’t Receive Credit for RAS for Incorrect Answer</a></li>
+<li class="chapter" data-level="" data-path="emails.html"><a href="emails.html#study-strategies-for-benchmarks"><i class="fa fa-check"></i>Study Strategies for Benchmarks:</a></li>
+<li class="chapter" data-level="" data-path="emails.html"><a href="emails.html#benchmarksras-2-5-being-dropped"><i class="fa fa-check"></i>Benchmarks/RAS 2-5 Being Dropped</a></li>
+<li class="chapter" data-level="" data-path="emails.html"><a href="emails.html#sona-research-requirement-questions"><i class="fa fa-check"></i>SONA Research Requirement Questions</a></li>
+<li class="chapter" data-level="" data-path="emails.html"><a href="emails.html#same-day-or-after-1-week-query"><i class="fa fa-check"></i>Same Day or After 1 Week Query</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html"><i class="fa fa-check"></i>Office Hours</a>
+<ul>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html#how-office-hours-work"><i class="fa fa-check"></i>How Office Hours Work</a></li>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html#office-hours-in-dr.-hardens-lab-space"><i class="fa fa-check"></i>Office Hours in Dr. Harden’s Lab Space</a></li>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html#helping-students-approach-benchmark-questions"><i class="fa fa-check"></i>Helping Students Approach Benchmark Questions</a>
+<ul>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html#key-strategies-for-breaking-down-questions"><i class="fa fa-check"></i>Key Strategies for Breaking Down Questions</a>
+<ul>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html#focus-on-the-stem"><i class="fa fa-check"></i>1. Focus on the Stem</a></li>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html#analyze-the-answer-choices"><i class="fa fa-check"></i>2. Analyze the Answer Choices</a></li>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html#highlight-common-question-structures"><i class="fa fa-check"></i>3. Highlight Common Question Structures</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html#guiding-students-when-theyre-stuck-tips-for-tas-in-office-hours"><i class="fa fa-check"></i>Guiding Students When They’re Stuck: Tips for TAs in Office Hours</a>
+<ul>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html#ask-questions-to-understand-their-challenges"><i class="fa fa-check"></i>1. Ask Questions to Understand Their Challenges</a></li>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html#help-them-explore-how-they-study"><i class="fa fa-check"></i>2. Help Them Explore How They Study</a></li>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html#encourage-active-engagement-with-the-material"><i class="fa fa-check"></i>3. Encourage Active Engagement with the Material</a></li>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html#help-them-create-an-effective-study-environment"><i class="fa fa-check"></i>4. Help Them Create an Effective Study Environment</a></li>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html#break-down-the-problem-together-and-modeling-critical-thinking"><i class="fa fa-check"></i>5. Break Down the Problem Together and Modeling Critical Thinking</a></li>
+<li class="chapter" data-level="" data-path="office-hours.html"><a href="office-hours.html#reassure-and-follow-up"><i class="fa fa-check"></i>6. Reassure and Follow Up</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html"><i class="fa fa-check"></i>Reflection Portfolios</a>
+<ul>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html#reflection-portfolio-overview"><i class="fa fa-check"></i>Reflection Portfolio Overview</a></li>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html#reflection-portfolio-guidelines-and-grading-procedures"><i class="fa fa-check"></i>Reflection Portfolio Guidelines and Grading Procedures</a>
+<ul>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html#submission-and-grading-process"><i class="fa fa-check"></i>Submission and Grading Process</a></li>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html#canvas-navigation"><i class="fa fa-check"></i>Canvas Navigation</a></li>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html#important-dates"><i class="fa fa-check"></i>Important Dates</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html#email-template-for-students"><i class="fa fa-check"></i>Email Template for Students</a>
+<ul>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html#email-template-for-students-who-pass"><i class="fa fa-check"></i>Email Template for Students Who Pass</a></li>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html#email-template-for-students-who-need-revisions"><i class="fa fa-check"></i>Email Template for Students Who Need Revisions</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html#reflection-questions-for-each-assignment"><i class="fa fa-check"></i>Reflection Questions for Each Assignment</a>
+<ul>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html#assignment-1-nine-myths-about-psychology"><i class="fa fa-check"></i>Assignment 1: Nine Myths About Psychology</a></li>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html#assignment-2-big-five-personality-inventory"><i class="fa fa-check"></i>Assignment 2: Big Five Personality Inventory</a></li>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html#assignment-3-superior-autobiographical-memory-sam"><i class="fa fa-check"></i>Assignment 3: Superior Autobiographical Memory (SAM)</a></li>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html#assignment-4-racism-and-health"><i class="fa fa-check"></i>Assignment 4: Racism and Health</a></li>
+<li class="chapter" data-level="" data-path="reflection-portfolios.html"><a href="reflection-portfolios.html#assignment-5-romanian-orphans"><i class="fa fa-check"></i>Assignment 5: Romanian Orphans</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html"><i class="fa fa-check"></i>Other Possible TA Duties</a>
+<ul>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html#hype-master-fall-only"><i class="fa fa-check"></i>Hype Master (Fall Only)</a>
+<ul>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html#hype-master-requirements"><i class="fa fa-check"></i>Hype Master Requirements</a></li>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html#example-email"><i class="fa fa-check"></i>Example Email</a></li>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html#standby-option"><i class="fa fa-check"></i>Standby option</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html#dashboard-runner"><i class="fa fa-check"></i>Dashboard Runner</a>
+<ul>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html#dashboard-runner-requirements"><i class="fa fa-check"></i>Dashboard Runner Requirements</a></li>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html#dashboard-process"><i class="fa fa-check"></i>Dashboard Process</a>
+<ul>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html#pre-class-dashboard-to-do-list"><i class="fa fa-check"></i>Pre-Class Dashboard To-Do List</a></li>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html#during-class-dashboard-to-do-list"><i class="fa fa-check"></i>During-Class Dashboard To-Do List</a></li>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html#post-class-dashboard-to-do-list"><i class="fa fa-check"></i>Post-Class Dashboard To-Do List</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html#gatekeeper-rules"><i class="fa fa-check"></i>Gatekeeper Rules</a>
+<ul>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html#opening-gatekeepers"><i class="fa fa-check"></i>Opening Gatekeepers</a></li>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html#gatekept-assignments"><i class="fa fa-check"></i>Gatekept Assignments</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="other-possible-ta-duties.html"><a href="other-possible-ta-duties.html#slack-support"><i class="fa fa-check"></i>Slack Support</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="course-materials.html"><a href="course-materials.html"><i class="fa fa-check"></i>Course Materials</a>
+<ul>
+<li class="chapter" data-level="" data-path="course-materials.html"><a href="course-materials.html#lecture-recordings"><i class="fa fa-check"></i>Lecture Recordings</a></li>
+<li class="chapter" data-level="" data-path="course-materials.html"><a href="course-materials.html#lecture-transcripts"><i class="fa fa-check"></i>Lecture Transcripts</a></li>
+<li class="chapter" data-level="" data-path="course-materials.html"><a href="course-materials.html#noba-readings"><i class="fa fa-check"></i>Noba Readings</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="links.html"><a href="links.html"><i class="fa fa-check"></i>Links</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">PSY301 uTA Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="benchmark-queries" class="section level1 hasAnchor">
+<h1>Benchmark Queries<a href="benchmark-queries.html#benchmark-queries" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>No matter how well we write, edit, and proofread our benchmark questions, someone will interpret a question or answer differently. The majority of the time, the student is not understanding the materials, but… Sometimes they have a good point. In these cases, we may give them a point back. If it is a problem with the question, we update the question and give points back to students who answer a particular way. Part of your job is fielding these “queries”, which is its own art form.</p>
+<p>What you’ll find in this chapter:</p>
+<ul>
+<li><a href="benchmark-queries.html#benchmark-query-process">Benchmark Query Process</a>
+<ul>
+<li><a href="benchmark-queries.html#student-guidelines">Student Guidelines</a><br />
+</li>
+<li><a href="benchmark-queries.html#query-handling-timeline">Query Handling Timeline</a><br />
+</li>
+</ul></li>
+<li><a href="benchmark-queries.html#sample-query-responses">Sample Query Responses</a>
+<ul>
+<li><a href="benchmark-queries.html#general-query-response">General Query Response</a><br />
+</li>
+<li><a href="benchmark-queries.html#query-submitted-same-day-or-after-1-week">Query Submitted Same Day or After 1 Week</a></li>
+</ul></li>
+</ul>
+<hr />
+<div id="benchmark-query-process" class="section level2 hasAnchor">
+<h2>Benchmark Query Process<a href="benchmark-queries.html#benchmark-query-process" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>All query responses are collected via a GoogleForm created every semester. The lead TA then shares the information from the GoogleForm in a spreadsheet:<br />
+- <strong>Link for students to submit queries</strong>: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbs8HcKNMpdF74leyva3ifXtdxReA146EDWLlXIvKjfM5FGw/viewform">BM Query Submission Form</a>. <em>(This link is already in the syllabus.)</em><br />
+- <strong>Link for TAs to read and review queries</strong>: <a href="https://docs.google.com/spreadsheets/d/1QpOVupSj_pbbOFkNkIkDNKeMF5jm2qG3fD4pShuTTEE/edit?gid=884077627#gid=884077627">Benchmark Queries Spreadsheet</a></p>
+<div id="student-guidelines" class="section level3 hasAnchor">
+<h3>Student Guidelines<a href="benchmark-queries.html#student-guidelines" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Purpose</strong>: Queries are for students to argue why their answer is the “best” due to an <strong>ERROR</strong> in the benchmark question. Examples of valid errors include:
+<ul>
+<li>A typo or ambiguity in the question.<br />
+</li>
+<li>Flawed logic in the question or answer choices.<br />
+</li>
+</ul></li>
+<li><strong>NOT for Clarification</strong>:
+<ul>
+<li>Queries are <strong>not</strong> an avenue for students to ask why their answer is wrong.<br />
+</li>
+<li>Direct these students to a TA’s office hours instead of the query form.<br />
+</li>
+</ul></li>
+<li><strong>Submission Deadline</strong>: Students must submit a query <strong>within 1 week</strong> of receiving their grade.<br />
+</li>
+<li><strong>Prohibited</strong>: Students cannot submit a query on the same day the benchmark was given. (This is a “cool down” period which helps reduce the number of queries we receive.)</li>
+</ul>
+<hr />
+</div>
+<div id="query-handling-timeline" class="section level3 hasAnchor">
+<h3>Query Handling Timeline<a href="benchmark-queries.html#query-handling-timeline" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Queries must be reviewed within <strong>48 hours</strong> of submission. In the past, under <strong>20% of students</strong> have successfully received points back on a query. However, please consider each query <strong>neutrally and openly</strong>. At the beginning of the semester, each of you will be assigned certain days to check the PSY301 TA email and queries, <a href="https://docs.google.com/spreadsheets/d/1AXT7fqusvnTBZrsaOuhRgZOQ4EmFNt0YmXQNxuAznls/edit?usp=sharing">Email and Query Assignments</a> Please be sure to note your dates down and set reminders if need be. In the past, certain TAs have forgotten or missed one of their assigned days. This can create more work for the next assigned TA, which is no fun (and unfair). So please be sure to note when you are responsible for this and manage your time accordingly so the workload is evenly distributed– and everyone is happy!</p>
+<ul>
+<li><strong>Your Day to Check Emails and Queries</strong>:
+<ul>
+<li>Check the <a href="https://docs.google.com/spreadsheets/d/1QpOVupSj_pbbOFkNkIkDNKeMF5jm2qG3fD4pShuTTEE/edit?gid=884077627#gid=884077627">Benchmark Queries Spreadsheet</a> on you assigned email day.<br />
+</li>
+<li>Notify the benchmark writer if a student submits a query about their benchmark question.</li>
+</ul></li>
+</ul>
+<p>If you are not the Benchmark Question Writer, you’re all set! If you are the question writer, you have a few more steps. <strong>You must review and respond to any queries to a question you wrote within 48 hours of receiving it.</strong> This prevents queries from piling up and helps keep anxious students at bay.</p>
+<ul>
+<li><strong>Benchmark Question Writer Responsibilities</strong>:
+<ul>
+<li>Review and respond directly to the student via email within 48 hours of receiving the query.<br />
+</li>
+<li>Consult with the team, lead TA, or course coordinator if you have questions or need guidance.<br />
+</li>
+<li>Make a decision about the query:
+<ol style="list-style-type: decimal">
+<li><strong>No Credit</strong>: Clearly explain why the query does not warrant points.
+<ul>
+<li>Write a <strong>paragraph in an email</strong> summarizing the material from the lecture or reading that supports the correct answer clearly explain why the student’s chosen answer is incorrect</li>
+<li>Many queries come from students not fully understanding the content. Direct these students to office hours whenever possible to minimize unnecessary queries.<br />
+</li>
+</ul></li>
+<li><strong>Point Awarded</strong>:
+<ul>
+<li>If justified, notify the lead TA to add the point back to the student’s score.<br />
+</li>
+</ul></li>
+<li><strong>Points for a Specific Answer Choice</strong>:
+<ul>
+<li>If the issue affects multiple students, points may be awarded to all who selected a specific answer choice.<br />
+</li>
+<li>The lead TA or course coordinator will handle score adjustments in these cases.</li>
+</ul></li>
+</ol></li>
+</ul></li>
+</ul>
+<p>So, how do you know if they are making a good point and deserve a point? This starts with <em>your</em> knowledge and judgement! Many times students are not understanding the content and just select the wrong answer, in which case, it is fairly straightforward to explain the error in their logic. But in those cases where you are unsure, ask yourself, “Can I see their point? Would someone else be able to see their point and agree? Does it make logical sense?” If you are still unsure, you can reach out to your fellow TAs to get their input, the lead TA, or the course coordinator.</p>
+<p>Though receiving a query about a question you wrote is no fun, especially if you have to give a point back to one or multiple students, these things happen! And to date, we haven’t lost a single soul to a benchmark query. ;) But I do hope this encourages you to be thoughtful about the questions you write. Ask yourself, “How might someone argue for one of the wrong answers?” or “How might someone misinterpret my writing?” Be thinking of how you might explain the topic and reasoning of your question to someone who chose the wrong answer– because they will try to fight you on this…! Keeping these things in mind will help prevent the number of queries you have to address. :)</p>
+</div>
+<div id="sample-query-responses" class="section level3 hasAnchor">
+<h3>Sample Query Responses<a href="benchmark-queries.html#sample-query-responses" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Below are guidelines for how to email students about their queries. Please adjust as needed based on the situation.</p>
+<hr />
+<div id="general-query-response" class="section level4 hasAnchor">
+<h4>General Query Response<a href="benchmark-queries.html#general-query-response" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><strong>Subject:</strong> Follow-Up on Your Benchmark Query</p>
+<p>Hi [Student],</p>
+<p>Thank you for submitting your query regarding the following question:<br />
+<em>Copy and paste the question stem.</em></p>
+<ul>
+<li><strong>Correct Answer:</strong> [Correct answer to the question]<br />
+</li>
+<li><strong>Your Answer:</strong> [Answer selected by the student]</li>
+</ul>
+<p><strong>Your Rationale:</strong><br />
+<em>Copy and paste the student’s rationale here.</em></p>
+<p><strong>Response:</strong><br />
+<em>Provide a detailed explanation of why the correct answer is correct and why the student’s answer is not correct.</em></p>
+<p>I hope this explanation clarifies any confusion. If you have additional questions, please don’t hesitate to attend office hours for further support!</p>
+<p>Best,<br />
+PSY301 TA Team</p>
+<hr />
+</div>
+<div id="query-submitted-same-day-or-after-1-week" class="section level4 hasAnchor">
+<h4>Query Submitted Same Day or After 1 Week<a href="benchmark-queries.html#query-submitted-same-day-or-after-1-week" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><strong>Subject:</strong> Query Policy Reminder</p>
+<p>Hi [Student],</p>
+<p>I see that you’ve submitted a query for Benchmark/RAS [number]. Per the syllabus, queries must adhere to specific time frames:</p>
+<ol style="list-style-type: decimal">
+<li>Queries must be submitted <strong>within one week</strong> from when the Benchmark (or RAS) was taken.<br />
+</li>
+<li>Queries <strong>cannot be submitted on the same day</strong> the Benchmark was given. This policy allows students to review the material thoroughly before seeking clarification.</li>
+</ol>
+<p>You submitted your query on [DATE], which falls outside the acceptable window for Benchmark/RAS [number]. As such, we are unable to address your query at this time. Please refer to the syllabus for more details about this policy and keep it in mind moving forward.</p>
+<p>If you have additional questions or need further clarification, please let us know.</p>
+<p>Best,<br />
+PSY301 TA Team</p>
+
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="benchmark-writing.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="emails.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

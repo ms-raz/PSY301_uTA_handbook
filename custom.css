@@ -1,0 +1,66 @@
+/* This is code to format the book correctly. For example, it rescales the text when the window is resized. 
+
+/* Set the content width to adjust dynamically with the browser window */
+.book-body {
+    max-width: 100%; /* Use the entire available space */
+    width: auto;     /* Automatically resize */
+    padding: 0 2%;   /* Add some padding for better readability */
+}
+
+/* Ensure the table of contents (TOC) adjusts dynamically */
+.book-summary {
+    max-width: 250px; /* Set a max width for the sidebar */
+    width: 20%;       /* Make it proportional to the screen width */
+}
+
+/* Allow TOC to collapse and expand on smaller screens */
+@media (max-width: 768px) {
+    .book-summary {
+        display: none; /* Hide the sidebar on smaller screens */
+    }
+
+    .book-header {
+        position: sticky; /* Keep the header visible while scrolling */
+        top: 0;
+        z-index: 1000;
+    }
+}
+
+/* Style the main content area */
+.book-content {
+    margin-left: 22%; /* Leave space for the TOC */
+}
+
+@media (max-width: 768px) {
+    .book-content {
+        margin-left: 0; /* Remove left margin for smaller screens */
+        padding: 0 5%;  /* Add some horizontal padding */
+    }
+}
+
+/* Adjust the font size for better readability on smaller devices */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+table {
+  width: 100%; /* Make tables take up the full width */
+  border-collapse: collapse; /* Remove unnecessary spacing */
+}
+
+th, td {
+  text-align: left; /* Left-align text for better readability */
+  padding: 10px; /* Add padding for better spacing */
+  vertical-align: top; /* Align text to the top for multi-line cells */
+}
+
+th {
+  background-color: #f4f4f4; /* Add a light background for headers */
+  font-weight: bold;
+}
+
+td:nth-child(2) {
+  width: 50%; /* Set the "Question" column to take up half the table width */
+}
